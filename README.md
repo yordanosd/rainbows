@@ -72,7 +72,7 @@ puts mix_colors(red,green)
 
 See, I didn't make it up. RED + GREEN = YELLOW
 
-![Additive Color Mixing](rgb-mixing.jpg)
+![Additive Color Mixing](images/rgb-mixing.jpg)
 
 **think**: Ok, but what if we don't know that rgb(255,255,0) is yellow. What if we wanted to be able to look up what English color describes rgb(255,255,0). What type of structure could we use to make this easier?
 
@@ -99,7 +99,7 @@ color_lookup = {
 }
 ```
 
-![RGB Color Wheel](rgb-color-wheel.jpg)
+![RGB Color Wheel](images/rgb-color-wheel.jpg)
 
 Then we could say:
 
@@ -130,7 +130,7 @@ and a value of
 }
 ```
 
-![Simple Rainbow](rainbow-rgb.jpg)
+![Simple Rainbow](images/rainbow-rgb.jpg)
 
 **TODO:**
 Use your rainbow Array to print out each color name in the color it represents using the colorize gem.
