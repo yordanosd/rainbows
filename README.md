@@ -59,7 +59,7 @@ puts "Blue intensity of #{red} = #{blue[0]}"
 Interestingly (and also, mind-blowing weirdly to me), when you add RED + GREEN in the [RGB Color Model](https://en.wikipedia.org/wiki/RGB_color_model#Additive_primary_colors), you get YELLOW. Yeah, not a weird brown color. Yellow. (I just learned something about additive vs subtractive colors.)
 
 ```ruby
-def mix_color(color1,color2)
+def mix_colors(color1,color2)
   mixed_color = []
   3.times do |i|
     mixed_color[i] = color1[i] + color2[i]
@@ -67,7 +67,7 @@ def mix_color(color1,color2)
   return mixed_color
 end
 
-puts mix_color(red,green)
+puts mix_colors(red,green)
 ```
 
 See, I didn't make it up. RED + GREEN = YELLOW
@@ -83,5 +83,54 @@ I think you read the title again. Ok, let's use a hash, because a hash is a key/
 Perhaps we have something like:
 
 ```ruby
-
+rainbow = {
+  [255,0,0] => "red",
+  [255,125,0] => "orange",
+  [255,255,0] => "yellow",
+  [125,255,0] => "spring green",
+  [255,255,0] => "green",
+  [0,255,125] => "turquoise",
+  [0,255,255] => "cyan",
+  [0,125,255] => "ocean",
+  [0,0,255] => "blue",
+  [125,0,255] => "violet",
+  [255,0,255] => "magenta",
+  [255,0,125] => "raspberry"
+}
 ```
+
+![RGB Color Wheel](rgb-color-wheel.jpg)
+
+Then we could say:
+
+```ruby
+new_color = mix_colors(red,green)
+puts "#{rainbow[red]} #{red} + #{rainbow[green]} #{green} = #{rainbow[new_color]} #{new_color}"
+```
+
+Success!
+
+## Array of Hashes
+
+Now we want to represent a rainbow of colors as an array of hashes, where each hash contains the name of the color (key) and labeled RGB values (value).
+
+For example `rainbow[0]` would be a hash and have a key of
+
+```ruby
+:red
+```
+and a value of
+
+```ruby
+{
+  r: 255,
+  g: 0,
+  b: 0
+}
+```
+
+![Simple Rainbow](rainbow-rgb.jpg)
+
+## Hash of Arrays of Hashes
+
+You're not done yet! Now we're going to 
