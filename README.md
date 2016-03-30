@@ -2,7 +2,7 @@
 Let's practice when and where to use Arrays and Hashes, as well as how to interact with them when they are used in combination.
 
 ## Pre-learning: RGB Color Codes
-In this exercise we are going to explore the use of Arrays and Hashes in a bit of detail. We will be talking about Rainbows and different color combinations. Before doing this, you should first [read up on the basics of RGB color codes](http://wikipedia.org)
+In this exercise we are going to explore the use of Arrays and Hashes in a bit of detail. We will be talking about Rainbows and different color combinations. Before doing this, you should first [read up on the basics of RGB color codes](https://en.wikipedia.org/wiki/RGB_color_model)
 
 ## Variables and Data Types
 We use variables to store information that we want to access and/or change later, but when creating those variables it is important that we choose the right data type for our information. Right now we only know a handful of data types, but in the future we are going to learn about many, many more different types of data. Each has its own use and we should consider that when picking which we use.
@@ -30,7 +30,7 @@ We are showing the representations of the colors, but what if we wanted to make 
 For example, perhaps:
 
 ```ruby
-red = red_hex[1..2]
+red_val = red_hex[1..2]
 ```
 
 This would isolate the "FF" in "#FF0000" but there's an easier way. Getting individual values out of the rgb codes would be even harder because you can't index the three values the same way you can with the hex values. (i.e. In Hex, the Red in RGB is always the first two characters after the #. In RBG, the Red is not always characters 4 through 6 like it is in red_rgb. For example, in green_rgb it's actually only character 4)
@@ -44,4 +44,43 @@ Did you read the title? Ok, yes, arrays would make this better.
 red = [255,0,0]
 green = [0,255,0]
 blue = [0,0,255]
+```
+
+If we do this, then we are easily able to isolate the pieces of `red` and manipulate them separately.
+
+For example:
+
+```ruby
+puts "Red intensity of #{red} = #{red[0]}"
+puts "Green intensity of #{red} = #{green[0]}"
+puts "Blue intensity of #{red} = #{blue[0]}"
+```
+
+Interestingly (and also, mind-blowing weirdly to me), when you add RED + GREEN in the [RGB Color Model](https://en.wikipedia.org/wiki/RGB_color_model#Additive_primary_colors), you get YELLOW. Yeah, not a weird brown color. Yellow. (I just learned something about additive vs subtractive colors.)
+
+```ruby
+def mix_color(color1,color2)
+  mixed_color = []
+  3.times do |i|
+    mixed_color[i] = color1[i] + color2[i]
+  end
+  return mixed_color
+end
+
+puts mix_color(red,green)
+```
+
+See, I didn't make it up. RED + GREEN = YELLOW
+![Additive Color Mixing](rgb-mixing.jpg)
+
+**think**: Ok, but what if we don't know that rgb(255,255,0) is yellow. What if we wanted to be able to look up what English color describes rgb(255,255,0). What type of structure could we use to make this easier?
+
+## Hashes
+
+I think you read the title again. Ok, let's use a hash, because a hash is a key/value pair that allows us to map a key to a value.
+
+Perhaps we have something like:
+
+```ruby
+
 ```
