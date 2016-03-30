@@ -83,7 +83,7 @@ I think you read the title again. Ok, let's use a hash, because a hash is a key/
 Perhaps we have something like:
 
 ```ruby
-rainbow = {
+color_lookup = {
   [255,0,0] => "red",
   [255,125,0] => "orange",
   [255,255,0] => "yellow",
@@ -105,14 +105,15 @@ Then we could say:
 
 ```ruby
 new_color = mix_colors(red,green)
-puts "#{rainbow[red]} #{red} + #{rainbow[green]} #{green} = #{rainbow[new_color]} #{new_color}"
+puts "#{color_lookup[red]} #{red} + #{color_lookup[green]} #{green} = #{color_lookup[new_color]} #{new_color}"
 ```
 
 Success!
 
 ## Array of Hashes
 
-Now we want to represent a rainbow of colors as an array of hashes, where each hash contains the name of the color (key) and labeled RGB values (value).
+**TODO:**
+Now we want to create a rainbow of colors as an array of hashes, where each hash contains the name of the color (key) and labeled RGB values (value).
 
 For example `rainbow[0]` would be a hash and have a key of
 
@@ -131,6 +132,9 @@ and a value of
 
 ![Simple Rainbow](rainbow-rgb.jpg)
 
+**TODO:**
+Use your rainbow Array to print out each color name in the color it represents using the colorize gem.
+
 ## Hash of Arrays of Hashes
 
-You're not done yet! Now we're going to 
+You're not done yet! Now we're going to create a broader rainbow
