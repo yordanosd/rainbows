@@ -71,6 +71,7 @@ puts mix_color(red,green)
 ```
 
 See, I didn't make it up. RED + GREEN = YELLOW
+
 ![Additive Color Mixing](rgb-mixing.jpg)
 
 **think**: Ok, but what if we don't know that rgb(255,255,0) is yellow. What if we wanted to be able to look up what English color describes rgb(255,255,0). What type of structure could we use to make this easier?
