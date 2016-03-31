@@ -138,3 +138,7 @@ Use your rainbow Array to print out each color name in the color it represents u
 ## Hash of Arrays of Hashes
 
 You're not done yet! Oh wait, I don't have time to finish this. So you get off easy for right now.
+
+I was going to make you do something with this:
+
+![Bigger Rainbow](images/larger-rainbow-rgb.jpg)
