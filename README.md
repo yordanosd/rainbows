@@ -167,7 +167,7 @@ violet
 ```
 
 **TODO (optional)**
-Print the color name in the color it represents using the [rainbow gem](https://github.com/sickill/rainbow). (_aside_: is this even possible?)
+Print the color name in the color it represents using the [colorize gem](https://github.com/fazibear/colorize) or the [rainbow gem](https://github.com/sickill/rainbow). (_aside_: is this even possible?)
 
 
 ## Hash of Arrays of Hashes
