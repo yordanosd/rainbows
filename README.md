@@ -171,7 +171,7 @@ Print the color name in the color it represents using the [colorize gem](https:/
 
 Sample Solution
 
-![Sample Solution with Colors](images/colored-solution.png)
+![Sample Solution with Colors](images/terminal-screenshot.png)
 
 
 ## Hash of Arrays of Hashes
