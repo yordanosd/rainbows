@@ -121,6 +121,8 @@ Play around with calling `mix_colors` on different arrays and see what you get.
 puts color_lookup[mix_colors([0,125,0],[0,0,255])]
 ```
 
+**think**: Why did we choose to use arrays where we used arrays and hashes where we used hashes? If you would have made a different data type choice, what and why would you have done differently?
+
 ## Array of Hashes
 
 Ok, so now let's start meshing together arrays and hashes and see what happens.
@@ -148,9 +150,6 @@ Again, this means you are creating an array of hashes, where each hash in the ar
 Model your array of hashes after the following:
 
 ![Simple Rainbow](images/rainbow-rgb.jpg)
-
-**TODO (optional)**
-You will need to add a couple elements to the `color_lookup` hash as well, if you want to be able to display the names of those last two colors.
 
 **TODO #2**
 Use your `rainbow` array to print out each color name in sequence.
