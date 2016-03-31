@@ -148,10 +148,10 @@ Model your array of hashes after the following:
 ![Simple Rainbow](images/rainbow-rgb.jpg)
 
 **TODO (optional)**
-You will need to add a couple elements to the color_lookup hash as well, if you want to be able to display the names of those last two colors.
+You will need to add a couple elements to the `color_lookup` hash as well, if you want to be able to display the names of those last two colors.
 
 **TODO #2**
-Use your rainbow array to print out each color name in sequence.
+Use your `rainbow` array to print out each color name in sequence.
 
 So your output could look like (or maybe something fancier):
 
