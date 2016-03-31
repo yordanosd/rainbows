@@ -108,12 +108,25 @@ new_color = mix_colors(red,green)
 puts "#{color_lookup[red]} #{red} + #{color_lookup[green]} #{green} = #{color_lookup[new_color]} #{new_color}"
 ```
 
-Success!
+Success! If you run [rainbows.rb](rainbows.rb) you'll see that by using the code above, we can do some color calculations.
+
+Result of rainbows.rb
+```
+red [255, 0, 0] + green [0, 255, 0] = yellow [255, 255, 0]
+```
+
+Play around with calling `mix_colors` on different arrays and see what you get.
+
+```ruby
+puts color_lookup[mix_colors([0,125,0],[0,0,255])]
+```
 
 ## Array of Hashes
 
-**TODO:**
-Now we want to create a rainbow of colors as an array of hashes, where each hash contains the name of the color (key) and labeled RGB values (value).
+Ok, so now let's start meshing together arrays and hashes and see what happens.
+
+**TODO #1**
+Let's create a rainbow of colors as an array of hashes, where each hash contains the name of the color (key) and labeled RGB values (value).
 
 For example `rainbow[0]` would be a hash and have a key of
 
@@ -130,10 +143,16 @@ and a value of
 }
 ```
 
+Model your array of hashes after the following:
+
 ![Simple Rainbow](images/rainbow-rgb.jpg)
 
+**TODO (optional)**
+You will need to add a couple elements to the color_lookup hash as well, if you want to be able to display the names of those last two colors.
+
 **TODO:**
-Use your rainbow Array to print out each color name in the color it represents using the colorize gem.
+Use your rainbow array to print out each color name in the color it represents using the colorize gem.
+
 
 ## Hash of Arrays of Hashes
 
