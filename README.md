@@ -150,8 +150,23 @@ Model your array of hashes after the following:
 **TODO (optional)**
 You will need to add a couple elements to the color_lookup hash as well, if you want to be able to display the names of those last two colors.
 
-**TODO:**
-Use your rainbow array to print out each color name in the color it represents using the colorize gem.
+**TODO #2**
+Use your rainbow array to print out each color name in sequence.
+
+So your output could look like (or maybe something fancier):
+
+```
+red
+orange
+yellow
+green
+blue
+indigo
+violet
+```
+
+**TODO (optional)**
+Print the color name in the color it represents using the [colorize gem](https://github.com/fazibear/colorize). (_aside_: is this even possible?)
 
 
 ## Hash of Arrays of Hashes
