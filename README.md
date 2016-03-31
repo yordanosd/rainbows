@@ -126,7 +126,7 @@ puts color_lookup[mix_colors([0,125,0],[0,0,255])]
 Ok, so now let's start meshing together arrays and hashes and see what happens.
 
 **TODO #1**
-Let's create a rainbow of colors as an array of hashes, where each hash contains the name of the color (key) and labeled RGB values (value).
+Let's create a rainbow of colors as an array of hashes, where each hash contains the name of the color (key) and the RGB values (value).
 
 For example `rainbow[0]` would be a hash and have a key of
 
@@ -142,6 +142,8 @@ and a value of
   b: 0
 }
 ```
+
+Again, this means you are creating an array of hashes, where each hash in the array has a symbol as its key and a hash as its value. That's a lot to digest.
 
 Model your array of hashes after the following:
 
